@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Kalendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div id='calendar-app'>
+    <div id='control-panel'>
+      <div style='color:#ffcc00; font-weight:bold; letter-spacing:4px;'>EVENT_PLANNER_v6.4</div>
+      <div class='input-row'>
+        <div class='input-box'>
+          <label>DATE (DD-MM)</label>
+          <input id='event-date' placeholder='Contoh: 31-08' type='text'/>
+        </div>
+        <div class='input-box'>
+          <label>EVENT NAME</label>
+          <input id='event-title' placeholder='Contoh: MERDEKA' type='text'/>
+        </div>
+      </div>
+      <button class='btn-add' onclick='addEvent()'>INJECT EVENT</button>
+      <div onclick='clearAll()' style='font-size:8px; color:#333; margin-top:10px; cursor:pointer;'>[ CLEAR MEMORY ]</div>
+    </div>
+
+    <div id='calendar-container'/>
+
+    <div class='footer' style='font-size: 10px; color: #444; margin-top: 30px; letter-spacing: 2px;'>
+      Kirin Kalendar
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
